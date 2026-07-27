@@ -1,8 +1,27 @@
 aid: invetx
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/invetx.png
 name: Invetx *
-description: 'Invetx * is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: life-sciences. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Invetx was a Boston-based veterinary biotechnology company developing protein-based
+  therapeutics — species-specific, half-life-extended monoclonal antibodies (mAbs) — for
+  chronic conditions in companion animals (dogs and cats). Its integrated platform spanned
+  antibody discovery, optimization, Fc-variant half-life extension, development and
+  manufacturing, with lead program IVX-01. Backed by GV, F-Prime Capital, Novo Holdings,
+  Eight Roads, Anterra Capital, Casdin Capital and Tekla, Invetx was acquired by Dechra
+  Pharmaceuticals in July 2024 for up to $520M. It exposes no public API, developer, or
+  documentation surface, and its standalone website (invetx.com) has been decommissioned
+  since the acquisition; this profile is retained as a network lead / portfolio record.
 url: https://raw.githubusercontent.com/api-evangelist/invetx/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +29,21 @@ x-backed-by:
 - gv
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: dechra
+x-acquired-date: '2024-07-18'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Life Sciences
+- Biotechnology
+- Animal Health
+- Veterinary
+- Monoclonal Antibodies
+- Therapeutics
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +51,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/invetx-domain-security.yml
 - type: Website
   url: invetx.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
