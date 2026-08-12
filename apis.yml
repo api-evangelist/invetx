@@ -53,8 +53,6 @@ maintainers:
 common:
 - type: DomainSecurity
   url: security/invetx-domain-security.yml
-- type: Website
-  url: invetx.com
 x-enrichment:
   date: '2026-07-19'
   status: backfilled
